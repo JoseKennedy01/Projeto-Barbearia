@@ -1,633 +1,443 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Barbearia premium com atendimento de excelência e agendamento online através do aplicativo oficial.">
-    <meta name="theme-color" content="#0B0B0B">
-
-    <title>BARBER — Barbearia Premium</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="estilos/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia Inovação</title>
+  <meta name="description" content="Barbearia Inovação: cortes, barba e produtos de qualidade.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-
-<header class="header">
-    <div class="container">
-        <a href="#" class="logo" aria-label="Página inicial">
-            <span>BARBER</span>
-        </a>
-
-        <nav class="navbar">
-            <ul class="nav-list">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#equipe">Equipe</a></li>
-                <li><a href="#aplicativo">Aplicativo</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
-        </nav>
-
-        <a href="#aplicativo" class="header-cta">Agendar</a>
-
-        <button class="menu-toggle" aria-label="Abrir menu">
-            <span></span>
-            <span></span>
+  <!-- Cabeçalho fixo -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo" data-tab="inicio">Barbearia <span>Inovação</span></a>
+      <nav class="nav" id="nav" aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="#" class="nav-link active" data-tab="inicio">Início</a></li>
+          <li><a href="#" class="nav-link" data-tab="fotos">Fotos</a></li>
+          <li><a href="#" class="nav-link" data-tab="equipe">Equipe</a></li>
+          <li><a href="#" class="nav-link" data-tab="produtos">Produtos</a></li>
+          <li><a href="#" class="nav-link" data-tab="avaliacoes">Avaliações</a></li>
+          <li><a href="#" class="nav-link" data-tab="contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo claro e escuro">
+          <span class="theme-icon" id="themeIcon">🌙</span>
         </button>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
-</header>
+  </header>
 
-<main>
-
-<section class="hero">
-    <div class="hero-background"></div>
-
-    <div class="container hero-container">
-
-        <div class="hero-content">
-
-            <div class="hero-badge">
-                <span></span>
-                Atendimento Premium
-            </div>
-
-            <h1>
-                Mais do que um corte.
-                <br>
-                Uma experiência.
-            </h1>
-
-            <p>
-                Cuidamos da sua imagem com precisão, conforto e tecnologia. Agende seu horário em poucos segundos através do nosso aplicativo oficial.
-            </p>
-
-            <div class="hero-actions">
-                <a href="#aplicativo" class="btn btn-primary">Baixar Aplicativo</a>
-                <a href="#sobre" class="btn btn-outline">Conheça a Barbearia</a>
-            </div>
-
-            <div class="hero-stats">
-
-                <article>
-                    <strong>+8 mil</strong>
-                    <span>Clientes atendidos</span>
-                </article>
-
-                <article>
-                    <strong>4.9★</strong>
-                    <span>Avaliação média</span>
-                </article>
-
-                <article>
-                    <strong>+6 anos</strong>
-                    <span>De experiência</span>
-                </article>
-
-            </div>
-
+  <main>
+    <!-- ==================== ABA: INÍCIO ==================== -->
+    <section id="inicio" class="tab-content active">
+      <section class="hero">
+        <div class="container hero-content">
+          <h1>Barbearia Inovação</h1>
+          <p>Cortes precisos, barba alinhada e um atendimento que faz a diferença.</p>
+          <div class="cta-group">
+            <a href="https://SEU-LINK-DO-APP.com" class="btn btn-primary" target="_blank" rel="noopener">Agendar pelo App</a>
+            <a href="#" class="btn btn-outline" data-tab="contato">Falar com o barbeiro</a>
+          </div>
         </div>
+      </section>
 
-        <div class="hero-visual">
-
-            <div class="hero-image">
-                <img src="assets/images/hero.webp" alt="Barbeiro realizando um corte premium">
-            </div>
-
-            <div class="floating-card card-one">
-                <small>Próximo horário</small>
-                <strong>15:30</strong>
-            </div>
-
-            <div class="floating-card card-two">
-                <small>Avaliação</small>
-                <strong>★★★★★</strong>
-            </div>
-
-        </div>
-
-    </div>
-
-    <a href="#sobre" class="scroll-indicator" aria-label="Ir para a próxima seção">
-        <span></span>
-    </a>
-
-</section>
-    <!-- SERVIÇOS -->
-    <section class="services section" id="servicos">
+      <section class="section">
         <div class="container">
+          <h2 class="section-title">Destaques</h2>
+          <p class="section-subtitle">Os serviços mais procurados da casa.</p>
+          <div class="grid-3">
+            <article class="card">
+              <div class="card-img-placeholder">📷 Foto do serviço</div>
+              <h3>Corte Degradê</h3>
+              <p>Acabamento impecável com transição suave e precisão na máquina e tesoura.</p>
+            </article>
+            <article class="card">
+              <div class="card-img-placeholder">📷 Foto do serviço</div>
+              <h3>Barba Completa</h3>
+              <p>Toalha quente, navalha e finalização para uma barba alinhada e hidratada.</p>
+            </article>
+            <article class="card">
+              <div class="card-img-placeholder">📷 Foto do serviço</div>
+              <h3>Kit Cuidados</h3>
+              <p>Produtos selecionados para manter o visual em casa entre as visitas.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-            <div class="section-header reveal">
-                <span class="section-label">Serviços</span>
-                <h2>Cada detalhe importa.</h2>
-                <p>Serviços realizados por profissionais especializados utilizando técnicas modernas e produtos de alta qualidade.</p>
-            </div>
+      <section class="section section-alt">
+        <div class="container">
+          <h2 class="section-title">Nossa Equipe</h2>
+          <p class="section-subtitle">Profissionais prontos para atender você.</p>
+          <div class="grid-2">
+            <article class="card team-preview">
+              <div class="team-photo-placeholder">📷 Foto do profissional</div>
+              <h3>Carlos</h3>
+              <p class="team-role">Barbeiro</p>
+              <p>Especialista em cortes degradê e navalhados.</p>
+            </article>
+            <article class="card team-preview">
+              <div class="team-photo-placeholder">📷 Foto do profissional</div>
+              <h3>Rafael</h3>
+              <p class="team-role">Barbeiro</p>
+              <p>Referência em barba completa e acabamento clássico.</p>
+            </article>
+          </div>
+          <div class="center">
+            <a href="#" class="btn btn-outline" data-tab="equipe">Conhecer a equipe</a>
+          </div>
+        </div>
+      </section>
 
-            <div class="services-grid">
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Depoimentos</h2>
+          <p class="section-subtitle">O que dizem nossos clientes.</p>
+          <div class="grid-2">
+            <figure class="card testimonial">
+              <div class="stars" aria-label="5 estrelas">★★★★★</div>
+              <blockquote>"Melhor corte que já fiz na vida. Atendimento impecável!"</blockquote>
+              <figcaption>— João P.</figcaption>
+            </figure>
+            <figure class="card testimonial">
+              <div class="stars" aria-label="5 estrelas">★★★★★</div>
+              <blockquote>"Ambiente limpo, equipe atenciosa e resultado perfeito."</blockquote>
+              <figcaption>— Marcos A.</figcaption>
+            </figure>
+          </div>
+          <div class="center" style="margin-top: 2rem;">
+            <a href="#" class="btn btn-outline" data-tab="avaliacoes">Ver todas as avaliações</a>
+          </div>
+        </div>
+      </section>
 
-                <article class="service-card reveal">
-                    <div class="service-top">
-                        <span>01</span>
-                        <small>45 min</small>
-                    </div>
+      <section class="section section-alt">
+        <div class="container center">
+          <h2 class="section-title">Pronto para um novo visual?</h2>
+          <p>Agende seu horário pelo nosso aplicativo ou entre em contato.</p>
+          <div class="cta-group">
+            <a href="https://SEU-LINK-DO-APP.com" class="btn btn-primary" target="_blank" rel="noopener">Agendar pelo App</a>
+            <a href="#" class="btn btn-outline" data-tab="fotos">Ver fotos</a>
+          </div>
+        </div>
+      </section>
+    </section>
 
-                    <h3>Corte Premium</h3>
+    <!-- ==================== ABA: FOTOS ==================== -->
+    <section id="fotos" class="tab-content">
+      <div class="page-hero">
+        <div class="container">
+          <h1>Fotos</h1>
+          <p>Galeria de cortes, barba e ambiente.</p>
+        </div>
+      </div>
+      <section class="section">
+        <div class="container">
+          <div class="gallery">
+            <article class="card gallery-item">
+              <div class="gallery-img-placeholder">📷 Adicionar foto</div>
+              <h3>Corte Degradê</h3>
+              <p>Corte com transição suave.</p>
+            </article>
+            <article class="card gallery-item">
+              <div class="gallery-img-placeholder">📷 Adicionar foto</div>
+              <h3>Barba Navalhada</h3>
+              <p>Alinhamento com navalha.</p>
+            </article>
+            <article class="card gallery-item">
+              <div class="gallery-img-placeholder">📷 Adicionar foto</div>
+              <h3>Corte Social</h3>
+              <p>Discrição e elegância.</p>
+            </article>
+            <article class="card gallery-item">
+              <div class="gallery-img-placeholder">📷 Adicionar foto</div>
+              <h3>Corte + Barba</h3>
+              <p>Combo completo.</p>
+            </article>
+            <article class="card gallery-item">
+              <div class="gallery-img-placeholder">📷 Adicionar foto</div>
+              <h3>Ambiente</h3>
+              <p>Espaço confortável e moderno.</p>
+            </article>
+            <article class="card gallery-item">
+              <div class="gallery-img-placeholder">📷 Adicionar foto</div>
+              <h3>Mais cortes</h3>
+              <p>Adicione mais fotos aqui.</p>
+            </article>
+            <article class="card gallery-item">
+              <div class="gallery-img-placeholder">📷 Adicionar foto</div>
+              <h3>Mais cortes</h3>
+              <p>Adicione mais fotos aqui.</p>
+            </article>
+            <article class="card gallery-item">
+              <div class="gallery-img-placeholder">📷 Adicionar foto</div>
+              <h3>Mais cortes</h3>
+              <p>Adicione mais fotos aqui.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </section>
 
-                    <p>Cortes clássicos e modernos executados com precisão para valorizar seu estilo.</p>
+    <!-- ==================== ABA: EQUIPE ==================== -->
+    <section id="equipe" class="tab-content">
+      <div class="page-hero">
+        <div class="container">
+          <h1>Nossa Equipe</h1>
+          <p>Conheça os profissionais da Barbearia Inovação.</p>
+        </div>
+      </div>
+      <section class="section">
+        <div class="container">
+          <div class="grid-3">
+            <article class="card team-card">
+              <div class="team-photo-placeholder">📷 Foto do profissional</div>
+              <h3>Carlos Silva</h3>
+              <p class="team-role">Barbeiro & Founder</p>
+              <p>Especialista em cortes degradê, navalhados e estilo clássico.</p>
+            </article>
+            <article class="card team-card">
+              <div class="team-photo-placeholder">📷 Foto do profissional</div>
+              <h3>Rafael Souza</h3>
+              <p class="team-role">Barbeiro</p>
+              <p>Referência em barba completa, acabamento e cuidados masculinos.</p>
+            </article>
+            <article class="card team-card">
+              <div class="team-photo-placeholder">📷 Foto do profissional</div>
+              <h3>[Nome do profissional]</h3>
+              <p class="team-role">[Cargo]</p>
+              <p>Adicione a descrição do profissional aqui.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </section>
 
-                    <div class="service-footer">
-                        <strong>R$ 50</strong>
-                        <a href="#aplicativo">Agendar</a>
-                    </div>
-                </article>
+    <!-- ==================== ABA: PRODUTOS ==================== -->
+    <section id="produtos" class="tab-content">
+      <div class="page-hero">
+        <div class="container">
+          <h1>Produtos</h1>
+          <p>Leve o estilo da barbearia para casa.</p>
+        </div>
+      </div>
+      <section class="section">
+        <div class="container">
+          <div class="grid-4">
+            <article class="card product-card">
+              <div class="product-img-placeholder">📷 Foto do produto</div>
+              <h3>Pomada Modeladora</h3>
+              <p>Fixação forte com acabamento natural.</p>
+              <p class="price">R$ 35,00</p>
+            </article>
+            <article class="card product-card">
+              <div class="product-img-placeholder">📷 Foto do produto</div>
+              <h3>Óleo para Barba</h3>
+              <p>Hidratação e brilho para a barba.</p>
+              <p class="price">R$ 28,00</p>
+            </article>
+            <article class="card product-card">
+              <div class="product-img-placeholder">📷 Foto do produto</div>
+              <h3>Shampoo Anticaspa</h3>
+              <p>Limpeza profunda sem ressecar.</p>
+              <p class="price">R$ 25,00</p>
+            </article>
+            <article class="card product-card">
+              <div class="product-img-placeholder">📷 Foto do produto</div>
+              <h3>Kit Completo</h3>
+              <p>Pomada + óleo + shampoo.</p>
+              <p class="price">R$ 80,00</p>
+            </article>
+            <article class="card product-card">
+              <div class="product-img-placeholder">📷 Foto do produto</div>
+              <h3>[Nome do produto]</h3>
+              <p>Adicione a descrição do produto.</p>
+              <p class="price">R$ 00,00</p>
+            </article>
+            <article class="card product-card">
+              <div class="product-img-placeholder">📷 Foto do produto</div>
+              <h3>[Nome do produto]</h3>
+              <p>Adicione a descrição do produto.</p>
+              <p class="price">R$ 00,00</p>
+            </article>
+            <article class="card product-card">
+              <div class="product-img-placeholder">📷 Foto do produto</div>
+              <h3>[Nome do produto]</h3>
+              <p>Adicione a descrição do produto.</p>
+              <p class="price">R$ 00,00</p>
+            </article>
+            <article class="card product-card">
+              <div class="product-img-placeholder">📷 Foto do produto</div>
+              <h3>[Nome do produto]</h3>
+              <p>Adicione a descrição do produto.</p>
+              <p class="price">R$ 00,00</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </section>
 
-                <article class="service-card reveal">
-                    <div class="service-top">
-                        <span>02</span>
-                        <small>30 min</small>
-                    </div>
+    <!-- ==================== ABA: AVALIAÇÕES ==================== -->
+    <section id="avaliacoes" class="tab-content">
+      <div class="page-hero">
+        <div class="container">
+          <h1>Avaliações</h1>
+          <p>Veja o que nossos clientes dizem sobre nós.</p>
+        </div>
+      </div>
+      <section class="section">
+        <div class="container">
+          <div class="center" style="margin-bottom: 3rem;">
+            <a href="https://www.google.com/maps/place/SUA-EMPRESA-AQUI"
+               class="btn btn-primary"
+               target="_blank"
+               rel="noopener">
+              ⭐ Ver avaliações no Google
+            </a>
+          </div>
+          <div class="grid-2">
+            <figure class="card testimonial">
+              <div class="stars" aria-label="5 estrelas">★★★★★</div>
+              <blockquote>"Melhor corte que já fiz na vida. Atendimento impecável!"</blockquote>
+              <figcaption>— João P.</figcaption>
+            </figure>
+            <figure class="card testimonial">
+              <div class="stars" aria-label="5 estrelas">★★★★★</div>
+              <blockquote>"Ambiente limpo, equipe atenciosa e resultado perfeito."</blockquote>
+              <figcaption>— Marcos A.</figcaption>
+            </figure>
+            <figure class="card testimonial">
+              <div class="stars" aria-label="5 estrelas">★★★★★</div>
+              <blockquote>"Sempre saio satisfeito. Recomendo demais!"</blockquote>
+              <figcaption>— Pedro L.</figcaption>
+            </figure>
+            <figure class="card testimonial">
+              <div class="stars" aria-label="5 estrelas">★★★★★</div>
+              <blockquote>"Profissionais de verdade. O melhor da cidade."</blockquote>
+              <figcaption>— André M.</figcaption>
+            </figure>
+          </div>
+          <div class="center" style="margin-top: 3rem;">
+            <p style="margin-bottom: 1rem;">Gostou do atendimento? Deixe sua avaliação!</p>
+            <a href="https://www.google.com/maps/place/SUA-EMPRESA-AQUI"
+               class="btn btn-outline"
+               target="_blank"
+               rel="noopener">
+              Avaliar no Google
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
 
-                    <h3>Barba Completa</h3>
-
-                    <p>Modelagem, acabamento com navalha e hidratação para um resultado impecável.</p>
-
-                    <div class="service-footer">
-                        <strong>R$ 35</strong>
-                        <a href="#aplicativo">Agendar</a>
-                    </div>
-                </article>
-
-                <article class="service-card reveal">
-                    <div class="service-top">
-                        <span>03</span>
-                        <small>70 min</small>
-                    </div>
-
-                    <h3>Combo Premium</h3>
-
-                    <p>Corte, barba, acabamento e finalização em uma experiência completa.</p>
-
-                    <div class="service-footer">
-                        <strong>R$ 80</strong>
-                        <a href="#aplicativo">Agendar</a>
-                    </div>
-                </article>
-
-                <article class="service-card reveal">
-                    <div class="service-top">
-                        <span>04</span>
-                        <small>25 min</small>
-                    </div>
-
-                    <h3>Acabamento</h3>
-
-                    <p>Ideal para manter o corte sempre alinhado entre os atendimentos.</p>
-
-                    <div class="service-footer">
-                        <strong>R$ 20</strong>
-                        <a href="#aplicativo">Agendar</a>
-                    </div>
-                </article>
-
-            </div>
-
-            <div class="services-banner reveal">
-
-                <div>
-                    <span class="section-label">Aplicativo Oficial</span>
-
-                    <h3>Agende em menos de um minuto.</h3>
-
-                    <p>Escolha o serviço, selecione seu barbeiro favorito e confirme seu horário diretamente pelo aplicativo.</p>
+    <!-- ==================== ABA: CONTATO ==================== -->
+    <section id="contato" class="tab-content">
+      <div class="page-hero">
+        <div class="container">
+          <h1>Contato</h1>
+          <p>Envie uma mensagem direto para o barbeiro.</p>
+        </div>
+      </div>
+      <section class="section">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-form-wrapper">
+              <h3>Envie sua mensagem</h3>
+              <form id="contactForm">
+                <div class="form-group">
+                  <label for="nome">Nome</label>
+                  <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
                 </div>
-
-                <a href="#aplicativo" class="btn btn-primary">
-                    Baixar Aplicativo
+                <div class="form-group">
+                  <label for="email">E-mail</label>
+                  <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="telefone">Telefone / WhatsApp</label>
+                  <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                </div>
+                <div class="form-group">
+                  <label for="assunto">Assunto</label>
+                  <select id="assunto" name="assunto">
+                    <option value="Agendamento">Agendamento</option>
+                    <option value="Dúvida">Dúvida</option>
+                    <option value="Elogio">Elogio</option>
+                    <option value="Sugestão">Sugestão</option>
+                    <option value="Outro">Outro</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="mensagem">Mensagem</label>
+                  <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+              </form>
+              <p id="formMessage" class="form-message"></p>
+            </div>
+            <div class="contact-info">
+              <h3>Informações</h3>
+              <p><strong>Endereço:</strong> Rua Exemplo, 123 — Centro</p>
+              <p><strong>Instagram:</strong> @barbeariainovacao</p>
+              <p><strong>E-mail:</strong> contato@barbeariainovacao.com</p>
+              <p><strong>Horário:</strong></p>
+              <ul class="horarios">
+                <li>Seg — Sex: 09h às 20h</li>
+                <li>Sábado: 09h às 18h</li>
+                <li>Domingo: Fechado</li>
+              </ul>
+              <div style="margin-top: 2rem;">
+                <p style="margin-bottom: 1rem;">Prefere agendar pelo app?</p>
+                <a href="https://SEU-LINK-DO-APP.com"
+                   class="btn btn-primary"
+                   target="_blank"
+                   rel="noopener">
+                  Agendar pelo App
                 </a>
-
+              </div>
             </div>
-
+          </div>
         </div>
+      </section>
     </section>
-
-    <!-- GALERIA -->
-    <section class="gallery section" id="galeria">
-        <div class="container">
-
-            <div class="section-header reveal">
-                <span class="section-label">Galeria</span>
-                <h2>Resultados que falam por si.</h2>
-                <p>Conheça um pouco do nosso espaço e do cuidado presente em cada atendimento.</p>
-            </div>
-
-            <div class="gallery-grid">
-
-                <figure class="gallery-item large reveal">
-                    <img src="assets/images/gallery-1.webp" alt="Cliente durante atendimento" loading="lazy">
-                </figure>
-
-                <figure class="gallery-item reveal">
-                    <img src="assets/images/gallery-2.webp" alt="Barbeiro realizando corte" loading="lazy">
-                </figure>
-
-                <figure class="gallery-item reveal">
-                    <img src="assets/images/gallery-3.webp" alt="Ambiente da barbearia" loading="lazy">
-                </figure>
-
-                <figure class="gallery-item tall reveal">
-                    <img src="assets/images/gallery-4.webp" alt="Modelagem de barba" loading="lazy">
-                </figure>
-
-                <figure class="gallery-item reveal">
-                    <img src="assets/images/gallery-5.webp" alt="Interior premium" loading="lazy">
-                </figure>
-
-                <figure class="gallery-item wide reveal">
-                    <img src="assets/images/gallery-6.webp" alt="Resultado de corte masculino" loading="lazy">
-                </figure>
-
-                <figure class="gallery-item reveal">
-                    <img src="assets/images/gallery-7.webp" alt="Produtos utilizados" loading="lazy">
-                </figure>
-
-                <figure class="gallery-item reveal">
-                    <img src="assets/images/gallery-8.webp" alt="Detalhes da barbearia" loading="lazy">
-                </figure>
-
-            </div>
-
-        </div>
-    </section>
-        <!-- EQUIPE -->
-    <section class="team section" id="equipe">
-        <div class="container">
-
-            <div class="section-header reveal">
-                <span class="section-label">Equipe</span>
-                <h2>Profissionais que transformam técnica em experiência.</h2>
-                <p>Nossa equipe é formada por barbeiros especializados, atentos aos detalhes e comprometidos em entregar um atendimento de excelência.</p>
-            </div>
-
-            <div class="team-grid">
-
-                <article class="team-card reveal">
-                    <img src="assets/images/barber-1.webp" alt="João Martins" loading="lazy">
-                    <div class="team-info">
-                        <h3>João Martins</h3>
-                        <span>Especialista em Fade</span>
-                    </div>
-                </article>
-
-                <article class="team-card reveal">
-                    <img src="assets/images/barber-2.webp" alt="Lucas Almeida" loading="lazy">
-                    <div class="team-info">
-                        <h3>Lucas Almeida</h3>
-                        <span>Especialista em Barba</span>
-                    </div>
-                </article>
-
-                <article class="team-card reveal">
-                    <img src="assets/images/barber-3.webp" alt="Rafael Costa" loading="lazy">
-                    <div class="team-info">
-                        <h3>Rafael Costa</h3>
-                        <span>Premium Stylist</span>
-                    </div>
-                </article>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- APLICATIVO -->
-    <section class="app section" id="aplicativo">
-
-        <div class="app-background"></div>
-
-        <div class="container app-grid">
-
-            <div class="app-content reveal">
-
-                <span class="section-label">Aplicativo Oficial</span>
-
-                <h2>Uma nova forma de agendar seu horário.</h2>
-
-                <p>
-                    Desenvolvido para tornar sua experiência ainda mais prática. Em poucos segundos você escolhe seu barbeiro, visualiza horários disponíveis e confirma seu atendimento.
-                </p>
-
-                <div class="app-features">
-
-                    <article>
-                        <strong>Agendamento Online</strong>
-                        <p>Reserve seu horário sem ligações ou mensagens.</p>
-                    </article>
-
-                    <article>
-                        <strong>Escolha seu Barbeiro</strong>
-                        <p>Agende sempre com o profissional da sua preferência.</p>
-                    </article>
-
-                    <article>
-                        <strong>Horários em Tempo Real</strong>
-                        <p>Visualize a agenda disponível instantaneamente.</p>
-                    </article>
-
-                    <article>
-                        <strong>Histórico Completo</strong>
-                        <p>Consulte todos os seus atendimentos anteriores.</p>
-                    </article>
-
-                    <article>
-                        <strong>Notificações</strong>
-                        <p>Receba lembretes para não perder seu horário.</p>
-                    </article>
-
-                </div>
-
-                <div class="store-buttons">
-
-                    <a href="#" class="store-button">
-                        <img src="assets/icons/google-play.svg" alt="Google Play">
-                        <div>
-                            <small>Disponível no</small>
-                            <strong>Google Play</strong>
-                        </div>
-                    </a>
-
-                    <a href="#" class="store-button">
-                        <img src="assets/icons/app-store.svg" alt="App Store">
-                        <div>
-                            <small>Baixe na</small>
-                            <strong>App Store</strong>
-                        </div>
-                    </a>
-
-                </div>
-
-            </div>
-
-            <div class="app-preview reveal">
-
-                <div class="phone">
-
-                    <div class="phone-notch"></div>
-
-                    <div class="phone-screen">
-
-                        <div class="screen-status">
-                            <span>09:41</span>
-                            <span>100%</span>
-                        </div>
-
-                        <div class="screen-header">
-                            <small>BARBER</small>
-                            <h3>Olá, Gustavo 👋</h3>
-                        </div>
-
-                        <div class="appointment-card">
-
-                            <small>Próximo atendimento</small>
-
-                            <strong>Corte Premium</strong>
-
-                            <span>Hoje • 15:30</span>
-
-                        </div>
-
-                        <div class="schedule">
-
-                            <button>09:00</button>
-                            <button>10:30</button>
-                            <button class="active">15:30</button>
-                            <button>17:00</button>
-
-                        </div>
-
-                        <button class="phone-action">
-                            Confirmar Agendamento
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <div class="floating-ui top-card">
-                    <small>Barbeiro</small>
-                    <strong>Lucas Almeida</strong>
-                </div>
-
-                <div class="floating-ui bottom-card">
-                    <small>Avaliação</small>
-                    <strong>★★★★★</strong>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-        <!-- AVALIAÇÕES -->
-    <section class="testimonials section" id="avaliacoes">
-        <div class="container">
-
-            <div class="section-header reveal">
-                <span class="section-label">Avaliações</span>
-                <h2>Quem conhece, recomenda.</h2>
-                <p>Nosso compromisso é oferecer uma experiência que vai muito além de um simples corte.</p>
-            </div>
-
-            <div class="testimonials-grid">
-
-                <article class="testimonial-card reveal">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p>"Ambiente impecável, profissionais extremamente atenciosos e um aplicativo que realmente facilita o agendamento."</p>
-                    <div class="testimonial-author">
-                        <strong>Pedro Henrique</strong>
-                        <span>Cliente</span>
-                    </div>
-                </article>
-
-                <article class="testimonial-card reveal featured">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p>"A melhor barbearia que já frequentei. Atendimento pontual, estrutura incrível e tudo organizado pelo aplicativo."</p>
-                    <div class="testimonial-author">
-                        <strong>Gabriel Souza</strong>
-                        <span>Cliente</span>
-                    </div>
-                </article>
-
-                <article class="testimonial-card reveal">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p>"Agendamento rápido, barbeiros excelentes e um ambiente extremamente confortável."</p>
-                    <div class="testimonial-author">
-                        <strong>Matheus Lima</strong>
-                        <span>Cliente</span>
-                    </div>
-                </article>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq section" id="faq">
-        <div class="container">
-
-            <div class="section-header reveal">
-                <span class="section-label">FAQ</span>
-                <h2>Perguntas frequentes.</h2>
-                <p>Tudo o que você precisa saber antes do seu atendimento.</p>
-            </div>
-
-            <div class="faq-list">
-
-                <article class="faq-item reveal">
-                    <button class="faq-question">
-                        <span>Como faço meu agendamento?</span>
-                        <i></i>
-                    </button>
-
-                    <div class="faq-answer">
-                        <p>Baixe nosso aplicativo oficial, escolha seu barbeiro, selecione o serviço desejado e confirme seu horário em poucos segundos.</p>
-                    </div>
-                </article>
-
-                <article class="faq-item reveal">
-                    <button class="faq-question">
-                        <span>Posso cancelar um horário?</span>
-                        <i></i>
-                    </button>
-
-                    <div class="faq-answer">
-                        <p>Sim. O cancelamento pode ser realizado diretamente pelo aplicativo dentro do prazo informado.</p>
-                    </div>
-                </article>
-
-                <article class="faq-item reveal">
-                    <button class="faq-question">
-                        <span>É possível escolher o barbeiro?</span>
-                        <i></i>
-                    </button>
-
-                    <div class="faq-answer">
-                        <p>Sim. Você pode selecionar qualquer profissional disponível no momento do agendamento.</p>
-                    </div>
-                </article>
-
-                <article class="faq-item reveal">
-                    <button class="faq-question">
-                        <span>O aplicativo é gratuito?</span>
-                        <i></i>
-                    </button>
-
-                    <div class="faq-answer">
-                        <p>Sim. O download é totalmente gratuito tanto para Android quanto para iPhone.</p>
-                    </div>
-                </article>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta">
-        <div class="container">
-
-            <div class="cta-box reveal">
-
-                <span class="section-label">Pronto para renovar seu visual?</span>
-
-                <h2>Baixe o aplicativo e agende seu próximo atendimento.</h2>
-
-                <p>Rápido, simples e sem filas. Escolha seu barbeiro favorito e confirme seu horário em poucos segundos.</p>
-
-                <div class="cta-actions">
-                    <a href="#" class="btn btn-primary">Baixar Aplicativo</a>
-                    <a href="#servicos" class="btn btn-outline">Ver Serviços</a>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-</main>
-
-<footer class="footer">
-
-    <div class="container">
-
-        <div class="footer-top">
-
-            <div class="footer-brand">
-                <a href="#" class="logo">BARBER</a>
-
-                <p>
-                    Uma experiência premium em cuidados masculinos, unindo excelência, conforto e tecnologia.
-                </p>
-            </div>
-
-            <div class="footer-links">
-
-                <div>
-                    <h4>Navegação</h4>
-
-                    <ul>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#servicos">Serviços</a></li>
-                        <li><a href="#galeria">Galeria</a></li>
-                        <li><a href="#equipe">Equipe</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4>Contato</h4>
-
-                    <ul>
-                        <li><a href="#">WhatsApp</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">E-mail</a></li>
-                        <li><a href="#">Endereço</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4>Aplicativo</h4>
-
-                    <ul>
-                        <li><a href="#">Google Play</a></li>
-                        <li><a href="#">App Store</a></li>
-                    </ul>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-
-            <p>© 2026 BARBER. Todos os direitos reservados.</p>
-
-            <div class="footer-social">
-                <a href="#" aria-label="Instagram">Instagram</a>
-                <a href="#" aria-label="Facebook">Facebook</a>
-                <a href="#" aria-label="WhatsApp">WhatsApp</a>
-            </div>
-
-        </div>
-
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">Barbearia Inovação</p>
+        <p>Endereço: Rua Exemplo, 123 — Centro</p>
+      </div>
+      <nav aria-label="Links do rodapé">
+        <ul class="footer-links">
+          <li><a href="#" data-tab="inicio" class="footer-tab-link">Início</a></li>
+          <li><a href="#" data-tab="fotos" class="footer-tab-link">Fotos</a></li>
+          <li><a href="#" data-tab="equipe" class="footer-tab-link">Equipe</a></li>
+          <li><a href="#" data-tab="produtos" class="footer-tab-link">Produtos</a></li>
+          <li><a href="#" data-tab="avaliacoes" class="footer-tab-link">Avaliações</a></li>
+          <li><a href="#" data-tab="contato" class="footer-tab-link">Contato</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p>Instagram: @barbeariainovacao</p>
+        <p>E-mail: contato@barbeariainovacao.com</p>
+      </div>
     </div>
+    <div class="footer-bottom">
+      <p>© 2026 Barbearia Inovação. Todos os direitos reservados.</p>
+      <p class="footer-devs">Desenvolvido por <strong>José Kennedy</strong> e <strong>Gustavo Thomé</strong></p>
+    </div>
+  </footer>
 
-</footer>
-
-<script src="js/script.js"></script>
-
+  <script src="script/script.js"></script>
 </body>
 </html>
